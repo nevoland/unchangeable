@@ -8,6 +8,11 @@ export default defineConfig({
   plugins: [
     moduleList({
       mode: "named-static-no-extension",
+      rootPath: resolve("lib/constants"),
+      outputPath: resolve("lib/constants.ts"),
+    }),
+    moduleList({
+      mode: "named-static-no-extension",
       rootPath: resolve("lib/tools"),
       outputPath: resolve("lib/tools.ts"),
     }),

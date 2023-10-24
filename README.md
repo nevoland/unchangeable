@@ -1,44 +1,33 @@
-# Foundation
+# Unchangeable
 
-🏛️ Base repository for building JavaScript apps or libraries.
-
-<!-- Delete start -->
-
-> To use this template, clone this repository and rename all "Foundation" instances to the name of your library.
-> Set this package to "public" before publishing it.
-
-### Uses
-
-- [Vite](https://vitejs.dev)
-- [Vitest](https://vitest.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [Prettier](https://prettier.io)
-- [Eslint](https://eslint.org)
-- [Tailwind](https://tailwindcss.com)
-- [Typedoc](https://typedoc.org)
-- [NVM](https://github.com/nvm-sh/nvm)
-
-<!-- Delete end -->
+🧊 Helpers for handling immutable values
 
 ### Features
 
-- List the main features of the library
-- Explain how it distinguishes from other libraries
+- Provides tools to update immutable objects and arrays
+- Defines empty object and array
+- Includes helpers to check for object emptiness
 
 ## Usage
 
 Everything is exported from the main entry-point through an ES6 module:
 
 ```js
-import { add } from "foundation";
+import {
+  EMPTY_OBJECT,
+  EMPTY_ARRAY,
+  setItem,
+  setProperty,
+  isEmpty,
+} from "unchangeable";
 ```
 
 ## Installation
 
-Install with the [Node Package Manager](https://www.npmjs.com/package/foundation):
+Install with the [Node Package Manager](https://www.npmjs.com/package/unchangeable):
 
 ```bash
-npm install foundation
+npm install unchangeable
 ```
 
 ## Documentation
