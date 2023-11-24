@@ -5,6 +5,10 @@ import { defineConfig } from "vite";
 import moduleList from "vite-plugin-module-list";
 
 export default defineConfig({
+  build: {
+    outDir: "dist/demo",
+  },
+  clearScreen: false,
   plugins: [
     moduleList({
       mode: { extension: "js", language: "ts" },
@@ -23,8 +27,4 @@ export default defineConfig({
     }),
     preact(),
   ],
-  clearScreen: false,
-  build: {
-    outDir: "dist/demo",
-  },
 });

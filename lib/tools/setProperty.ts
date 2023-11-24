@@ -1,6 +1,6 @@
-import { EMPTY_OBJECT } from "../constants";
+import { EMPTY_OBJECT } from "../constants.js";
 
-import { isEmpty } from "./isEmpty";
+import { isEmpty } from "./isEmpty.js";
 
 /**
  * Returns a new object with `object[key]` set to `value` if `object[key]` is strictly different from `value`. Otherwise, returns the provided `object`.

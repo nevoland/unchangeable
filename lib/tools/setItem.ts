@@ -1,4 +1,4 @@
-import { EMPTY_ARRAY } from "../constants";
+import { EMPTY_ARRAY } from "../constants.js";
 
 /**
  * Returns a new array with `array[index]` set to `value` if `array[index]` is strictly different from `value`. Otherwise, returns the provided `array`.

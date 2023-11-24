@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 
-import { isEmpty } from "./isEmpty";
+import { isEmpty } from "./isEmpty.js";
 
 test("returns true for empty objects", () => {
   expect(isEmpty()).toBeTruthy();

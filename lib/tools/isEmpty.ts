@@ -1,4 +1,4 @@
-import { EMPTY_OBJECT } from "../constants";
+import { EMPTY_OBJECT } from "../constants.js";
 
 /**
  * Checks whether the provided object is empty or not.

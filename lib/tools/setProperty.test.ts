@@ -1,8 +1,8 @@
 import { expect, test } from "vitest";
 
-import { EMPTY_OBJECT } from "../constants";
+import { EMPTY_OBJECT } from "../constants.js";
 
-import { setProperty } from "./setProperty";
+import { setProperty } from "./setProperty.js";
 
 test("sets a property by returning a new object", () => {
   const object = { a: 1 };

@@ -1,4 +1,4 @@
 export type * from "./types";
 
-export * from "./constants";
-export * from "./tools";
+export * from "./constants.js";
+export * from "./tools.js";

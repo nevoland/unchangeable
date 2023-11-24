@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 
-import { setItem } from "./setItem";
+import { setItem } from "./setItem.js";
 
 test("sets an item by returning a new array", () => {
   const array = [1];
