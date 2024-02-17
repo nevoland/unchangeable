@@ -26,7 +26,7 @@ Immutable empty array.
 
 #### Defined in
 
-[constants/EMPTY_ARRAY.ts:4](https://github.com/nevoland/unchangeable/blob/6ab5219/lib/constants/EMPTY_ARRAY.ts#L4)
+[constants/EMPTY_ARRAY.ts:4](https://github.com/nevoland/unchangeable/blob/e23cf85/lib/constants/EMPTY_ARRAY.ts#L4)
 
 ___
 
@@ -38,37 +38,32 @@ Immutable empty object.
 
 #### Defined in
 
-[constants/EMPTY_OBJECT.ts:4](https://github.com/nevoland/unchangeable/blob/6ab5219/lib/constants/EMPTY_OBJECT.ts#L4)
+[constants/EMPTY_OBJECT.ts:4](https://github.com/nevoland/unchangeable/blob/e23cf85/lib/constants/EMPTY_OBJECT.ts#L4)
 
 ## Functions
 
 ### isEmpty
 
-▸ **isEmpty**<`T`\>(`value?`): `boolean`
+▸ **isEmpty**(`value?`): `boolean`
 
-Checks whether the provided object is empty or not.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `object` = {} |
+Checks whether the provided value is empty or not.
+A value is empty if it does not own any property (in case of an object) or item (in case of an array), or if it is `null` or `undefined`.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value?` | ``null`` \| `T` | The object to check. |
+| `value?` | `any` | The value to check. |
 
 #### Returns
 
 `boolean`
 
-`true` if the object is empty, `false` otherwise.
+`true` if the value is empty, `false` otherwise.
 
 #### Defined in
 
-[tools/isEmpty.ts:9](https://github.com/nevoland/unchangeable/blob/6ab5219/lib/tools/isEmpty.ts#L9)
+[tools/isEmpty.ts:12](https://github.com/nevoland/unchangeable/blob/e23cf85/lib/tools/isEmpty.ts#L12)
 
 ___
 
@@ -109,7 +104,7 @@ const result = setItem(["a", "b"], 1, "c")
 
 #### Defined in
 
-[tools/setItem.ts:19](https://github.com/nevoland/unchangeable/blob/6ab5219/lib/tools/setItem.ts#L19)
+[tools/setItem.ts:19](https://github.com/nevoland/unchangeable/blob/e23cf85/lib/tools/setItem.ts#L19)
 
 ___
 
@@ -152,7 +147,7 @@ const result = setProperty({ a: 1 }, "b", 2)
 
 #### Defined in
 
-[tools/setProperty.ts:22](https://github.com/nevoland/unchangeable/blob/6ab5219/lib/tools/setProperty.ts#L22)
+[tools/setProperty.ts:22](https://github.com/nevoland/unchangeable/blob/e23cf85/lib/tools/setProperty.ts#L22)
 
 ___
 
@@ -160,26 +155,26 @@ ___
 
 ▸ **undefinedIfEmpty**<`T`\>(`value?`): `undefined` \| `T`
 
-Returns `undefined` if the object is empty.
+Returns `undefined` if the value is empty.
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `object` = {} |
+| Name |
+| :------ |
+| `T` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value?` | `T` | The object to check. |
+| `value?` | `T` | The value to check. |
 
 #### Returns
 
 `undefined` \| `T`
 
-`undefined` if the object is empty, the object otherwise.
+`undefined` if the value is empty, the value otherwise.
 
 #### Defined in
 
-[tools/undefinedIfEmpty.ts:9](https://github.com/nevoland/unchangeable/blob/6ab5219/lib/tools/undefinedIfEmpty.ts#L9)
+[tools/undefinedIfEmpty.ts:9](https://github.com/nevoland/unchangeable/blob/e23cf85/lib/tools/undefinedIfEmpty.ts#L9)
