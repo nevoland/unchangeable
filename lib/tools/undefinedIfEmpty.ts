@@ -1,12 +1,12 @@
 import { isEmpty } from "./isEmpty.js";
 
 /**
- * Returns `undefined` if the object is empty.
+ * Returns `undefined` if the value is empty.
  *
- * @param value The object to check.
- * @returns `undefined` if the object is empty, the object otherwise.
+ * @param value The value to check.
+ * @returns `undefined` if the value is empty, the value otherwise.
  */
-export function undefinedIfEmpty<T extends object = {}>(value?: T) {
+export function undefinedIfEmpty<T>(value?: T) {
   if (isEmpty(value)) {
     return undefined;
   }
