@@ -29,7 +29,7 @@ export function set<T>(
   if (typeof key === "number" || key === APPEND || key === PREPEND) {
     return setItem(
       value as any,
-      key,
+      key as any,
       set(((value ?? EMPTY_ARRAY) as any)[key], path, item, keyIndex + 1),
     ) as T;
   }

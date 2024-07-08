@@ -21,30 +21,82 @@ import { Append, Prepend, Remove } from "../types.js";
  * @returns A new updated array or the same `array` if no change was necessary.
  */
 export function setItem<T>(
+  array: T[] | undefined,
+  index: number | undefined,
+  value: T,
+): T[];
+export function setItem<T>(
+  array: T[] | undefined,
+  operation: Prepend | Append | Remove,
+  value: T,
+): T[];
+export function setItem<T>(
+  array: T[] | undefined,
+  index: number | undefined,
+  operation: Remove,
+): T[];
+export function setItem<T>(
+  array: T[] | undefined,
+  index: number | undefined,
+  operation: Prepend | Append,
+  value: T,
+): T[];
+export function setItem<T>(
   array: T[] | undefined = EMPTY_ARRAY as unknown as T[],
-  index: number | undefined | Append | Prepend,
-  value: T | Remove,
+  indexOrOperation: number | undefined | Prepend | Append | Remove,
+  valueOrOperation: T | Prepend | Append | Remove,
+  valueOrNothing?: T,
 ): T[] {
-  if (index === APPEND) {
-    if (value === REMOVE) {
-      return array;
+  switch (indexOrOperation) {
+    case PREPEND: {
+      return [valueOrOperation as T, ...array];
     }
-    return [...array, value];
-  }
-  if (index === PREPEND) {
-    if (value === REMOVE) {
-      return array;
+    case APPEND: {
+      return [...array, valueOrOperation as T];
     }
-    return [value, ...array];
+    case REMOVE: {
+      const index = array.indexOf(valueOrOperation as T);
+      if (index === -1) {
+        return array;
+      }
+      return [...array.slice(0, index), ...array.slice(index + 1)];
+    }
+    case undefined:
+      return array;
+    default: {
+      const index = indexOrOperation;
+      if (index === undefined || index < 0 || index >= array.length) {
+        return array;
+      }
+      switch (valueOrOperation) {
+        case PREPEND: {
+          return [
+            ...array.slice(0, index),
+            valueOrNothing!,
+            ...array.slice(index),
+          ];
+        }
+        case APPEND: {
+          return [
+            ...array.slice(0, index + 1),
+            valueOrNothing!,
+            ...array.slice(index + 1),
+          ];
+        }
+        case REMOVE: {
+          return [...array.slice(0, index), ...array.slice(index + 1)];
+        }
+        default: {
+          if (array[index] === valueOrOperation) {
+            return array;
+          }
+          return [
+            ...array.slice(0, index),
+            valueOrOperation,
+            ...array.slice(index + 1),
+          ];
+        }
+      }
+    }
   }
-  if (index === undefined || index < 0 || index >= array.length) {
-    return array;
-  }
-  if (array[index] === value) {
-    return array;
-  }
-  if (value === REMOVE) {
-    return [...array.slice(0, index), ...array.slice(index + 1)];
-  }
-  return [...array.slice(0, index), value, ...array.slice(index + 1)];
 }

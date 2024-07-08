@@ -25,12 +25,13 @@ test("returns an empty array if undefined", () => {
 test("inserts items", () => {
   expect(setItem([1, 2], APPEND, 3)).toEqual([1, 2, 3]);
   expect(setItem([2, 3], PREPEND, 1)).toEqual([1, 2, 3]);
+  expect(setItem([1, 2], 0, APPEND, 11)).toEqual([1, 11, 2]);
+  expect(setItem([1, 2], 1, PREPEND, 11)).toEqual([1, 11, 2]);
 });
 
 test("removes items", () => {
   expect(setItem([1, 2, 3], 2, REMOVE)).toEqual([1, 2]);
+  expect(setItem([1, 2, 3], REMOVE, 2)).toEqual([1, 3]);
   const array = [1, 2];
   expect(setItem(array, 2, REMOVE)).toEqual(array);
-  expect(setItem(array, APPEND, REMOVE)).toEqual(array);
-  expect(setItem(array, PREPEND, REMOVE)).toEqual(array);
 });
