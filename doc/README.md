@@ -10,6 +10,7 @@ unchangeable
 - [Key](README.md#key)
 - [Path](README.md#path)
 - [Prepend](README.md#prepend)
+- [Remove](README.md#remove)
 
 ### Variables
 
@@ -17,9 +18,11 @@ unchangeable
 - [EMPTY\_ARRAY](README.md#empty_array)
 - [EMPTY\_OBJECT](README.md#empty_object)
 - [PREPEND](README.md#prepend-1)
+- [REMOVE](README.md#remove-1)
 
 ### Functions
 
+- [insertItem](README.md#insertitem)
 - [isEmpty](README.md#isempty)
 - [set](README.md#set)
 - [setItem](README.md#setitem)
@@ -34,7 +37,7 @@ unchangeable
 
 #### Defined in
 
-[types.ts:3](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/types.ts#L3)
+[types/Append.ts:3](https://github.com/nevoland/unchangeable/blob/b908e22/lib/types/Append.ts#L3)
 
 ___
 
@@ -44,7 +47,7 @@ ___
 
 #### Defined in
 
-[types.ts:7](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/types.ts#L7)
+[types/Key.ts:4](https://github.com/nevoland/unchangeable/blob/b908e22/lib/types/Key.ts#L4)
 
 ___
 
@@ -54,7 +57,7 @@ ___
 
 #### Defined in
 
-[types.ts:9](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/types.ts#L9)
+[types/Path.ts:3](https://github.com/nevoland/unchangeable/blob/b908e22/lib/types/Path.ts#L3)
 
 ___
 
@@ -64,7 +67,17 @@ ___
 
 #### Defined in
 
-[types.ts:5](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/types.ts#L5)
+[types/Prepend.ts:3](https://github.com/nevoland/unchangeable/blob/b908e22/lib/types/Prepend.ts#L3)
+
+___
+
+### Remove
+
+Ƭ **Remove**: typeof [`REMOVE`](README.md#remove-1)
+
+#### Defined in
+
+[types/Remove.ts:3](https://github.com/nevoland/unchangeable/blob/b908e22/lib/types/Remove.ts#L3)
 
 ## Variables
 
@@ -74,7 +87,7 @@ ___
 
 #### Defined in
 
-[constants/APPEND.ts:1](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/constants/APPEND.ts#L1)
+[constants/APPEND.ts:1](https://github.com/nevoland/unchangeable/blob/b908e22/lib/constants/APPEND.ts#L1)
 
 ___
 
@@ -86,7 +99,7 @@ Immutable empty array.
 
 #### Defined in
 
-[constants/EMPTY_ARRAY.ts:4](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/constants/EMPTY_ARRAY.ts#L4)
+[constants/EMPTY_ARRAY.ts:4](https://github.com/nevoland/unchangeable/blob/b908e22/lib/constants/EMPTY_ARRAY.ts#L4)
 
 ___
 
@@ -98,7 +111,7 @@ Immutable empty object.
 
 #### Defined in
 
-[constants/EMPTY_OBJECT.ts:4](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/constants/EMPTY_OBJECT.ts#L4)
+[constants/EMPTY_OBJECT.ts:4](https://github.com/nevoland/unchangeable/blob/b908e22/lib/constants/EMPTY_OBJECT.ts#L4)
 
 ___
 
@@ -108,9 +121,61 @@ ___
 
 #### Defined in
 
-[constants/PREPEND.ts:1](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/constants/PREPEND.ts#L1)
+[constants/PREPEND.ts:1](https://github.com/nevoland/unchangeable/blob/b908e22/lib/constants/PREPEND.ts#L1)
+
+___
+
+### REMOVE
+
+• `Const` **REMOVE**: typeof [`REMOVE`](README.md#remove-1)
+
+#### Defined in
+
+[constants/REMOVE.ts:1](https://github.com/nevoland/unchangeable/blob/b908e22/lib/constants/REMOVE.ts#L1)
 
 ## Functions
+
+### insertItem
+
+▸ **insertItem**<`T`\>(`array?`, `index`, `value`): `T`[]
+
+Returns a new array with the `value` inserted at `index`.
+If `index` is symbol `APPEND`, it is considered to be `array.length`, which has the effect of appending the `value`.
+If `index` is `undefined`, a negative number, or strictly greater than `array.length`, returns the `array` untouched.
+If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `array` | `undefined` \| `T`[] | The array to update. |
+| `index` | `undefined` \| `number` \| typeof [`APPEND`](README.md#append-1) | The index of the item of the array to update. |
+| `value` | `T` | The value to set the item to. |
+
+#### Returns
+
+`T`[]
+
+A new updated array or the same `array` if no change was necessary.
+
+**`Example`**
+
+```typescript
+const result = insertItem(["a", "b"], 2, "c")
+// ["a", "b", "c"]
+```
+
+#### Defined in
+
+[tools/insertItem.ts:21](https://github.com/nevoland/unchangeable/blob/b908e22/lib/tools/insertItem.ts#L21)
+
+___
 
 ### isEmpty
 
@@ -133,7 +198,7 @@ A value is empty if it does not own any property (in case of an object) or item 
 
 #### Defined in
 
-[tools/isEmpty.ts:12](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/tools/isEmpty.ts#L12)
+[tools/isEmpty.ts:12](https://github.com/nevoland/unchangeable/blob/b908e22/lib/tools/isEmpty.ts#L12)
 
 ___
 
@@ -166,7 +231,7 @@ An new composite `value` or the same `value` if no change was necessary.
 
 #### Defined in
 
-[tools/set.ts:16](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/tools/set.ts#L16)
+[tools/set.ts:16](https://github.com/nevoland/unchangeable/blob/b908e22/lib/tools/set.ts#L16)
 
 ___
 
@@ -175,6 +240,9 @@ ___
 ▸ **setItem**<`T`\>(`array?`, `index`, `value`): `T`[]
 
 Returns a new array with `array[index]` set to `value` if `array[index]` is strictly different from `value`. Otherwise, returns the provided `array`.
+If `value` is the symbol `REMOVE`, returns a new array with the value at `index` removed.
+If `index` is the symbol `APPEND`, returns a new array with the provided `value` appended.
+If `index` is the symbol `PREPEND`, returns a new array with the provided `value` prepended.
 If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
 If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
 
@@ -190,7 +258,7 @@ If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
 | :------ | :------ | :------ |
 | `array` | `undefined` \| `T`[] | The array to update. |
 | `index` | `undefined` \| `number` \| typeof [`APPEND`](README.md#append-1) \| typeof [`PREPEND`](README.md#prepend-1) | The index of the item of the array to update. |
-| `value` | `T` | The value to set the item to. |
+| `value` | typeof [`REMOVE`](README.md#remove-1) \| `T` | The value to set the item to. |
 
 #### Returns
 
@@ -207,7 +275,7 @@ const result = setItem(["a", "b"], 1, "c")
 
 #### Defined in
 
-[tools/setItem.ts:20](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/tools/setItem.ts#L20)
+[tools/setItem.ts:23](https://github.com/nevoland/unchangeable/blob/b908e22/lib/tools/setItem.ts#L23)
 
 ___
 
@@ -250,7 +318,7 @@ const result = setProperty({ a: 1 }, "b", 2)
 
 #### Defined in
 
-[tools/setProperty.ts:22](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/tools/setProperty.ts#L22)
+[tools/setProperty.ts:22](https://github.com/nevoland/unchangeable/blob/b908e22/lib/tools/setProperty.ts#L22)
 
 ___
 
@@ -280,4 +348,4 @@ Returns `undefined` if the value is empty.
 
 #### Defined in
 
-[tools/undefinedIfEmpty.ts:9](https://github.com/nevoland/unchangeable/blob/2623ed3/lib/tools/undefinedIfEmpty.ts#L9)
+[tools/undefinedIfEmpty.ts:9](https://github.com/nevoland/unchangeable/blob/b908e22/lib/tools/undefinedIfEmpty.ts#L9)
