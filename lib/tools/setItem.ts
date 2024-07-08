@@ -1,8 +1,11 @@
-import { APPEND, EMPTY_ARRAY, PREPEND } from "../constants.js";
-import { Append, Prepend } from "../types.js";
+import { APPEND, EMPTY_ARRAY, PREPEND, REMOVE } from "../constants.js";
+import { Append, Prepend, Remove } from "../types.js";
 
 /**
  * Returns a new array with `array[index]` set to `value` if `array[index]` is strictly different from `value`. Otherwise, returns the provided `array`.
+ * If `value` is the symbol `REMOVE`, returns a new array with the value at `index` removed.
+ * If `index` is the symbol `APPEND`, returns a new array with the provided `value` appended.
+ * If `index` is the symbol `PREPEND`, returns a new array with the provided `value` prepended.
  * If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
  * If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
  *
@@ -20,12 +23,18 @@ import { Append, Prepend } from "../types.js";
 export function setItem<T>(
   array: T[] | undefined = EMPTY_ARRAY as unknown as T[],
   index: number | undefined | Append | Prepend,
-  value: T,
+  value: T | Remove,
 ): T[] {
   if (index === APPEND) {
+    if (value === REMOVE) {
+      return array;
+    }
     return [...array, value];
   }
   if (index === PREPEND) {
+    if (value === REMOVE) {
+      return array;
+    }
     return [value, ...array];
   }
   if (index === undefined || index < 0 || index >= array.length) {
@@ -33,6 +42,9 @@ export function setItem<T>(
   }
   if (array[index] === value) {
     return array;
+  }
+  if (value === REMOVE) {
+    return [...array.slice(0, index), ...array.slice(index + 1)];
   }
   return [...array.slice(0, index), value, ...array.slice(index + 1)];
 }

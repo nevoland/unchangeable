@@ -21,6 +21,11 @@ export default defineConfig({
       rootPath: resolve("lib/tools"),
     }),
     moduleList({
+      mode: { extension: "js", language: "ts", type: true },
+      outputPath: resolve("lib/types.ts"),
+      rootPath: resolve("lib/types"),
+    }),
+    moduleList({
       mode: { extension: "js", language: "ts" },
       outputPath: resolve("src/components.ts"),
       rootPath: resolve("src/components"),
