@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[types/Path.ts:3](https://github.com/nevoland/unchangeable/blob/2c5734c710b944a89a399bf77ff0c911e2c1b47f/lib/types/Path.ts#L3)
+[types/Path.ts:3](https://github.com/nevoland/unchangeable/blob/7e2e0733662cd884e038e5bf65b215f911ac6852/lib/types/Path.ts#L3)
