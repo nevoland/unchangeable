@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 
-import { APPEND, PREPEND, REMOVE } from "../constants.js";
+import { APPEND, EMPTY_ARRAY, PREPEND, REMOVE } from "../constants.js";
 
 import { setItem } from "./setItem.js";
 
@@ -19,7 +19,7 @@ test("returns the array untouched", () => {
 });
 
 test("returns an empty array if undefined", () => {
-  expect(setItem(undefined, 0, 2)).toEqual([]);
+  expect(setItem(undefined, 0, 2)).toEqual(EMPTY_ARRAY);
 });
 
 test("inserts items", () => {
