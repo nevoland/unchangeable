@@ -1,4 +1,5 @@
-import { EMPTY_OBJECT } from "../constants.js";
+import { EMPTY_OBJECT, REMOVE } from "../constants.js";
+import { Remove } from "../types.js";
 
 import { isEmpty } from "./isEmpty.js";
 
@@ -22,12 +23,12 @@ import { isEmpty } from "./isEmpty.js";
 export function setProperty<T extends object, K extends keyof T = keyof T>(
   object: T | undefined = EMPTY_OBJECT,
   key?: K,
-  value?: T[K],
+  value?: T[K] | Remove,
 ): T {
   if (key === undefined) {
     return object;
   }
-  if (value === undefined) {
+  if (value === undefined || value === REMOVE) {
     if (key in object) {
       const { [key]: _, ...result } = object;
       return isEmpty(result) ? EMPTY_OBJECT : result;

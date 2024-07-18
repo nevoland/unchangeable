@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 
-import { EMPTY_OBJECT } from "../constants.js";
+import { EMPTY_OBJECT, REMOVE } from "../constants.js";
 
 import { setProperty } from "./setProperty.js";
 
@@ -17,6 +17,7 @@ test("sets a property by returning a new object", () => {
 test("removes a property", () => {
   expect(setProperty({ a: 1, b: 2 }, "a", undefined)).toEqual({ b: 2 });
   expect(setProperty({ a: 1 }, "a", undefined)).toBe(EMPTY_OBJECT);
+  expect(setProperty({ a: 1 }, "a", REMOVE)).toBe(EMPTY_OBJECT);
 });
 
 test("returns the object untouched", () => {
