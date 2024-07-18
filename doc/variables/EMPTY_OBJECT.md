@@ -12,4 +12,4 @@ Immutable empty object.
 
 ## Defined in
 
-[constants/EMPTY\_OBJECT.ts:4](https://github.com/nevoland/unchangeable/blob/7e2e0733662cd884e038e5bf65b215f911ac6852/lib/constants/EMPTY_OBJECT.ts#L4)
+[constants/EMPTY\_OBJECT.ts:4](https://github.com/nevoland/unchangeable/blob/101090ff07d64b1060ac18b7dfa92d52d5b47da4/lib/constants/EMPTY_OBJECT.ts#L4)

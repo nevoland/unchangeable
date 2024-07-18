@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[types/Remove.ts:3](https://github.com/nevoland/unchangeable/blob/7e2e0733662cd884e038e5bf65b215f911ac6852/lib/types/Remove.ts#L3)
+[types/Remove.ts:3](https://github.com/nevoland/unchangeable/blob/101090ff07d64b1060ac18b7dfa92d52d5b47da4/lib/types/Remove.ts#L3)

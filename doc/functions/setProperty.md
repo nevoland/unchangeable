@@ -29,7 +29,7 @@ The object to update.
 
 The key of the object to update.
 
-• **value?**: `T`\[`K`\]
+• **value?**: *typeof* [`REMOVE`](../variables/REMOVE.md) \| `T`\[`K`\]
 
 The value to set the object key to.
 
@@ -48,4 +48,4 @@ const result = setProperty({ a: 1 }, "b", 2)
 
 ## Defined in
 
-[tools/setProperty.ts:22](https://github.com/nevoland/unchangeable/blob/7e2e0733662cd884e038e5bf65b215f911ac6852/lib/tools/setProperty.ts#L22)
+[tools/setProperty.ts:23](https://github.com/nevoland/unchangeable/blob/101090ff07d64b1060ac18b7dfa92d52d5b47da4/lib/tools/setProperty.ts#L23)

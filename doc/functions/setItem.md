@@ -50,7 +50,7 @@ const result = setItem(["a", "b"], 1, "c")
 
 ### Defined in
 
-[tools/setItem.ts:23](https://github.com/nevoland/unchangeable/blob/7e2e0733662cd884e038e5bf65b215f911ac6852/lib/tools/setItem.ts#L23)
+[tools/setItem.ts:23](https://github.com/nevoland/unchangeable/blob/101090ff07d64b1060ac18b7dfa92d52d5b47da4/lib/tools/setItem.ts#L23)
 
 ## setItem(array, operation, value)
 
@@ -94,7 +94,7 @@ const result2 = setItem(["a", "b", "c"], REMOVE, "b")
 
 ### Defined in
 
-[tools/setItem.ts:45](https://github.com/nevoland/unchangeable/blob/7e2e0733662cd884e038e5bf65b215f911ac6852/lib/tools/setItem.ts#L45)
+[tools/setItem.ts:45](https://github.com/nevoland/unchangeable/blob/101090ff07d64b1060ac18b7dfa92d52d5b47da4/lib/tools/setItem.ts#L45)
 
 ## setItem(array, index, operation)
 
@@ -137,7 +137,7 @@ const result = setItem(["a", "b"], 1, REMOVE)
 
 ### Defined in
 
-[tools/setItem.ts:66](https://github.com/nevoland/unchangeable/blob/7e2e0733662cd884e038e5bf65b215f911ac6852/lib/tools/setItem.ts#L66)
+[tools/setItem.ts:66](https://github.com/nevoland/unchangeable/blob/101090ff07d64b1060ac18b7dfa92d52d5b47da4/lib/tools/setItem.ts#L66)
 
 ## setItem(array, index, operation, value)
 
@@ -182,4 +182,4 @@ const result = setItem(["a", "b"], 1, APPEND, "c")
 
 ### Defined in
 
-[tools/setItem.ts:87](https://github.com/nevoland/unchangeable/blob/7e2e0733662cd884e038e5bf65b215f911ac6852/lib/tools/setItem.ts#L87)
+[tools/setItem.ts:87](https://github.com/nevoland/unchangeable/blob/101090ff07d64b1060ac18b7dfa92d52d5b47da4/lib/tools/setItem.ts#L87)
