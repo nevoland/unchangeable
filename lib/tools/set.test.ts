@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 
-import { APPEND } from "../constants.js";
+import { APPEND, REMOVE } from "../constants.js";
 
 import { set } from "./set.js";
 
@@ -18,6 +18,26 @@ test("updates a collection", () => {
     ),
   ).toEqual({
     this: [{ is: 1 }, { cool: 1 }],
+  });
+});
+
+function increment(value: number) {
+  return value + 1;
+}
+
+function remove() {
+  return REMOVE;
+}
+
+test("updates a collection with an updater", () => {
+  expect(set({ a: [1, 2] }, ["a", 1], increment)).toEqual({
+    a: [1, 3],
+  });
+  expect(set({ a: [1, 2] }, ["a", 3], increment)).toEqual({
+    a: [1, 2],
+  });
+  expect(set({ a: [1, 2] }, ["a", 1], remove)).toEqual({
+    a: [1],
   });
 });
 
