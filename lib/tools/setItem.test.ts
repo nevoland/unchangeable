@@ -32,6 +32,9 @@ test("inserts items", () => {
 test("removes items", () => {
   expect(setItem([1, 2, 3], 2, REMOVE)).toEqual([1, 2]);
   expect(setItem([1, 2, 3], REMOVE, 2)).toEqual([1, 3]);
+  expect(setItem([2, 2, 2], REMOVE, 2)).toEqual([2, 2]);
+  expect(setItem([2], REMOVE, 2)).toBe(EMPTY_ARRAY);
   const array = [1, 2];
-  expect(setItem(array, 2, REMOVE)).toEqual(array);
+  expect(setItem(array, 2, REMOVE)).toBe(array);
+  expect(setItem([1], 0, REMOVE)).toBe(EMPTY_ARRAY);
 });

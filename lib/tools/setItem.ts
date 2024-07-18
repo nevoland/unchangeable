@@ -108,6 +108,9 @@ export function setItem<T>(
       if (index === -1) {
         return array;
       }
+      if (array.length === 1) {
+        return EMPTY_ARRAY as T[];
+      }
       return [...array.slice(0, index), ...array.slice(index + 1)];
     }
     case undefined:
@@ -133,6 +136,9 @@ export function setItem<T>(
           ];
         }
         case REMOVE: {
+          if (array.length === 1) {
+            return EMPTY_ARRAY as T[];
+          }
           return [...array.slice(0, index), ...array.slice(index + 1)];
         }
         default: {
