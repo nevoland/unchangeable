@@ -198,7 +198,7 @@ const value = { level: 5, parent: { level: 6 } };
 // Set value.parent.level to `7`
 const nextValue = set(value, ["parent", "level"], 7);
 
-assert(value.parent.level === 5);
+assert(value.parent.level === 6);
 assert(nextValue.parent.level === 7);
 ```
 
@@ -218,7 +218,7 @@ function increment(value) {
 // Set value.parent.level to `7`
 const nextValue = set(value, ["parent", "level"], increment);
 
-assert(value.parent.level === 5);
+assert(value.parent.level === 6);
 assert(nextValue.parent.level === 7);
 ```
 
