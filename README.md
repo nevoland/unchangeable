@@ -168,7 +168,7 @@ assert(otherValue[1] === "Mathis");
 assert(otherValue.length === 3);
 ```
 
-### Removing items
+#### Removing items
 
 Use `REMOVE` to remove an item at a specific index or an item with a specific value:
 
