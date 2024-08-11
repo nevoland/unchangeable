@@ -4,10 +4,16 @@
 
 # unchangeable
 
+## Interfaces
+
+- [MemoizedFunction](interfaces/MemoizedFunction.md)
+
 ## Type Aliases
 
 - [Append](type-aliases/Append.md)
+- [Callable](type-aliases/Callable.md)
 - [Key](type-aliases/Key.md)
+- [MemoizeCache](type-aliases/MemoizeCache.md)
 - [Path](type-aliases/Path.md)
 - [Prepend](type-aliases/Prepend.md)
 - [Remove](type-aliases/Remove.md)
@@ -23,6 +29,7 @@
 ## Functions
 
 - [isEmpty](functions/isEmpty.md)
+- [memoize](functions/memoize.md)
 - [set](functions/set.md)
 - [setItem](functions/setItem.md)
 - [setProperty](functions/setProperty.md)
