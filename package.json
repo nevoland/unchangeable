@@ -1,6 +1,16 @@
 {
   "name": "unchangeable",
   "version": "1.6.0",
+  "description": "Tools for immutable values.",
+  "keywords": [
+    "immutable",
+    "persistent",
+    "data",
+    "datastructure"
+    "functional",
+    "pure",
+    "stateless",
+  ],
   "type": "module",
   "main": "./dist/main.js",
   "exports": {
