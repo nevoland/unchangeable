@@ -5,13 +5,13 @@ import { APPEND, EMPTY_ARRAY, PREPEND, REMOVE } from "../constants.js";
 import { setItem } from "./setItem.js";
 
 test("sets an item by returning a new array", () => {
-  const array = [1];
+  const array = [1] as const;
   expect(setItem([1], 0, 2)).toEqual([2]);
   expect(setItem(array, 0, 2)).not.toBe(array);
 });
 
 test("returns the array untouched", () => {
-  const array = [1];
+  const array = [1] as const;
   expect(setItem(array, -1, 2)).toBe(array);
   expect(setItem(array, 1, 2)).toBe(array);
   expect(setItem(array, 0, 1)).toBe(array);
@@ -34,7 +34,7 @@ test("removes items", () => {
   expect(setItem([1, 2, 3], REMOVE, 2)).toEqual([1, 3]);
   expect(setItem([2, 2, 2], REMOVE, 2)).toEqual([2, 2]);
   expect(setItem([2], REMOVE, 2)).toBe(EMPTY_ARRAY);
-  const array = [1, 2];
+  const array = [1, 2] as const;
   expect(setItem(array, 2, REMOVE)).toBe(array);
   expect(setItem([1], 0, REMOVE)).toBe(EMPTY_ARRAY);
 });

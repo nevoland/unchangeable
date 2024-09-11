@@ -21,10 +21,10 @@ import { Append, Prepend, Remove } from "../types.js";
  * @returns A new updated array or the same `array` if no change was necessary.
  */
 export function setItem<T>(
-  array: T[] | undefined,
+  array: readonly T[] | undefined,
   index: number | undefined,
   value: T,
-): T[];
+): readonly T[];
 /**
  * Returns a new array with the `value` prepended to it if `operation` is `PREPEND` or appended to it if `operation` is `APPEND`. If `operation` is `REMOVE`, the `value` is removed from the `array` if it exists, otherwise it returns the same `array`.
  * If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
@@ -43,10 +43,10 @@ export function setItem<T>(
  * @returns A new updated array or the same `array` if no change was necessary.
  */
 export function setItem<T>(
-  array: T[] | undefined,
+  array: readonly T[] | undefined,
   operation: Prepend | Append | Remove,
   value: T,
-): T[];
+): readonly T[];
 /**
  * Returns a new array with the value at the given `index` removed from the `array`.
  * If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
@@ -64,10 +64,10 @@ export function setItem<T>(
  * @returns A new updated array or the same `array` if no change was necessary.
  */
 export function setItem<T>(
-  array: T[] | undefined,
+  array: readonly T[] | undefined,
   index: number | undefined,
   operation: Remove,
-): T[];
+): readonly T[];
 /**
  * Returns a new array with the value inserted at the given `index`. If the `operation` is `PREPEND`, inserts the item before the item at the specified `index`. If the `operation` is `APPEND`, inserts the item after the item at the specified `index`.
  * If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
@@ -85,17 +85,17 @@ export function setItem<T>(
  * @returns A new updated array or the same `array` if no change was necessary.
  */
 export function setItem<T>(
-  array: T[] | undefined,
+  array: readonly T[] | undefined,
   index: number | undefined,
   operation: Prepend | Append,
   value: T,
-): T[];
+): readonly T[];
 export function setItem<T>(
-  array: T[] | undefined = EMPTY_ARRAY as unknown as T[],
+  array: readonly T[] | undefined = EMPTY_ARRAY,
   indexOrOperation: number | undefined | Prepend | Append | Remove,
   valueOrOperation: T | Prepend | Append | Remove,
   valueOrNothing?: T,
-): T[] {
+): readonly T[] {
   switch (indexOrOperation) {
     case PREPEND: {
       return [valueOrOperation as T, ...array];

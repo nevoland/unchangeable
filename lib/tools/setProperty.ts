@@ -3,6 +3,19 @@ import { Remove } from "../types.js";
 
 import { isEmpty } from "./isEmpty.js";
 
+export function setProperty<
+  T extends Readonly<object>,
+  K extends keyof T = keyof T,
+>(object: T | undefined, key: K, value?: Remove): Omit<T, K>;
+export function setProperty<
+  T extends Readonly<object>,
+  K extends keyof T = keyof T,
+>(object: T | undefined, key: K, value: T[K]): T;
+export function setProperty<
+  T extends Readonly<object>,
+  K extends string | symbol | number,
+  V,
+>(object: T | undefined, key: K, value: V): T & { readonly [key in K]: V };
 /**
  * Returns a new object with `object[key]` set to `value` if `object[key]` is strictly different from `value`. Otherwise, returns the provided `object`.
  * If `key` is `undefined`, returns the `object` untouched.
@@ -20,11 +33,14 @@ import { isEmpty } from "./isEmpty.js";
  * @param value The value to set the object key to.
  * @returns A new updated object or the same `object` if no change was necessary.
  */
-export function setProperty<T extends object, K extends keyof T = keyof T>(
+export function setProperty<
+  T extends Readonly<object>,
+  K extends keyof T = keyof T,
+>(
   object: T | undefined = EMPTY_OBJECT,
   key?: K,
   value?: T[K] | Remove,
-): T {
+): Readonly<T> {
   if (key === undefined) {
     return object;
   }
