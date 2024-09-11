@@ -24,7 +24,7 @@
 
 ## Defined in
 
-[types/MemoizedFunction.ts:4](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/types/MemoizedFunction.ts#L4)
+[types/MemoizedFunction.ts:4](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/types/MemoizedFunction.ts#L4)
 
 ## Properties
 
@@ -36,4 +36,4 @@ Cache.
 
 #### Defined in
 
-[types/MemoizedFunction.ts:8](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/types/MemoizedFunction.ts#L8)
+[types/MemoizedFunction.ts:8](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/types/MemoizedFunction.ts#L8)

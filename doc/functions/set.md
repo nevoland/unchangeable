@@ -40,4 +40,4 @@ An new composite `value` or the same `value` if no change was necessary.
 
 ## Defined in
 
-[tools/set.ts:16](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/tools/set.ts#L16)
+[tools/set.ts:16](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/tools/set.ts#L16)

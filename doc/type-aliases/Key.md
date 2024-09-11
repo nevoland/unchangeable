@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[types/Key.ts:4](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/types/Key.ts#L4)
+[types/Key.ts:4](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/types/Key.ts#L4)

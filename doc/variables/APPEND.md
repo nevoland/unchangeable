@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[constants/APPEND.ts:1](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/constants/APPEND.ts#L1)
+[constants/APPEND.ts:1](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/constants/APPEND.ts#L1)

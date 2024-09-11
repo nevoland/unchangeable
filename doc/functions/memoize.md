@@ -38,4 +38,4 @@ The memoized function.
 
 ## Defined in
 
-[tools/memoize.ts:15](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/tools/memoize.ts#L15)
+[tools/memoize.ts:15](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/tools/memoize.ts#L15)

@@ -8,7 +8,7 @@
 
 ## setItem(array, index, value)
 
-> **setItem**\<`T`\>(`array`, `index`, `value`): `T`[]
+> **setItem**\<`T`\>(`array`, `index`, `value`): readonly `T`[]
 
 Returns a new array with `array[index]` set to `value` if `array[index]` is strictly different from `value`. Otherwise, returns the provided `array`.
 If `value` is the symbol `REMOVE`, returns a new array with the value at `index` removed.
@@ -23,7 +23,7 @@ If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
 
 ### Parameters
 
-• **array**: `undefined` \| `T`[]
+• **array**: `undefined` \| readonly `T`[]
 
 The array to update.
 
@@ -37,7 +37,7 @@ The value to set the item to.
 
 ### Returns
 
-`T`[]
+readonly `T`[]
 
 A new updated array or the same `array` if no change was necessary.
 
@@ -50,11 +50,11 @@ const result = setItem(["a", "b"], 1, "c")
 
 ### Defined in
 
-[tools/setItem.ts:23](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/tools/setItem.ts#L23)
+[tools/setItem.ts:23](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/tools/setItem.ts#L23)
 
 ## setItem(array, operation, value)
 
-> **setItem**\<`T`\>(`array`, `operation`, `value`): `T`[]
+> **setItem**\<`T`\>(`array`, `operation`, `value`): readonly `T`[]
 
 Returns a new array with the `value` prepended to it if `operation` is `PREPEND` or appended to it if `operation` is `APPEND`. If `operation` is `REMOVE`, the `value` is removed from the `array` if it exists, otherwise it returns the same `array`.
 If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
@@ -65,7 +65,7 @@ If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
 
 ### Parameters
 
-• **array**: `undefined` \| `T`[]
+• **array**: `undefined` \| readonly `T`[]
 
 The array to update.
 
@@ -79,7 +79,7 @@ The value to insert or remove.
 
 ### Returns
 
-`T`[]
+readonly `T`[]
 
 A new updated array or the same `array` if no change was necessary.
 
@@ -94,11 +94,11 @@ const result2 = setItem(["a", "b", "c"], REMOVE, "b")
 
 ### Defined in
 
-[tools/setItem.ts:45](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/tools/setItem.ts#L45)
+[tools/setItem.ts:45](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/tools/setItem.ts#L45)
 
 ## setItem(array, index, operation)
 
-> **setItem**\<`T`\>(`array`, `index`, `operation`): `T`[]
+> **setItem**\<`T`\>(`array`, `index`, `operation`): readonly `T`[]
 
 Returns a new array with the value at the given `index` removed from the `array`.
 If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
@@ -110,7 +110,7 @@ If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
 
 ### Parameters
 
-• **array**: `undefined` \| `T`[]
+• **array**: `undefined` \| readonly `T`[]
 
 The array to update.
 
@@ -124,7 +124,7 @@ The index of the item to remove.
 
 ### Returns
 
-`T`[]
+readonly `T`[]
 
 A new updated array or the same `array` if no change was necessary.
 
@@ -137,11 +137,11 @@ const result = setItem(["a", "b"], 1, REMOVE)
 
 ### Defined in
 
-[tools/setItem.ts:66](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/tools/setItem.ts#L66)
+[tools/setItem.ts:66](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/tools/setItem.ts#L66)
 
 ## setItem(array, index, operation, value)
 
-> **setItem**\<`T`\>(`array`, `index`, `operation`, `value`): `T`[]
+> **setItem**\<`T`\>(`array`, `index`, `operation`, `value`): readonly `T`[]
 
 Returns a new array with the value inserted at the given `index`. If the `operation` is `PREPEND`, inserts the item before the item at the specified `index`. If the `operation` is `APPEND`, inserts the item after the item at the specified `index`.
 If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
@@ -153,7 +153,7 @@ If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
 
 ### Parameters
 
-• **array**: `undefined` \| `T`[]
+• **array**: `undefined` \| readonly `T`[]
 
 The array to update.
 
@@ -169,7 +169,7 @@ Either `PREPEND` or `APPEND`.
 
 ### Returns
 
-`T`[]
+readonly `T`[]
 
 A new updated array or the same `array` if no change was necessary.
 
@@ -182,4 +182,4 @@ const result = setItem(["a", "b"], 1, APPEND, "c")
 
 ### Defined in
 
-[tools/setItem.ts:87](https://github.com/nevoland/unchangeable/blob/c15b981d32f388232a520f423807ef8c1f3bd134/lib/tools/setItem.ts#L87)
+[tools/setItem.ts:87](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/tools/setItem.ts#L87)
