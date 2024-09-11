@@ -6,10 +6,10 @@
     "immutable",
     "persistent",
     "data",
-    "datastructure"
+    "datastructure",
     "functional",
     "pure",
-    "stateless",
+    "stateless"
   ],
   "type": "module",
   "main": "./dist/main.js",
