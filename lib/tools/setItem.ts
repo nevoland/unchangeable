@@ -3,10 +3,15 @@ import { Append, Prepend, Remove } from "../types.js";
 
 /**
  * Returns a new array with `array[index]` set to `value` if `array[index]` is strictly different from `value`. Otherwise, returns the provided `array`.
+ *
  * If `value` is the symbol `REMOVE`, returns a new array with the value at `index` removed.
+ *
  * If `index` is the symbol `APPEND`, returns a new array with the provided `value` appended.
+ *
  * If `index` is the symbol `PREPEND`, returns a new array with the provided `value` prepended.
+ *
  * If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
+ *
  * If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
  *
  * @example
@@ -27,6 +32,7 @@ export function setItem<T>(
 ): readonly T[];
 /**
  * Returns a new array with the `value` prepended to it if `operation` is `PREPEND` or appended to it if `operation` is `APPEND`. If `operation` is `REMOVE`, the `value` is removed from the `array` if it exists, otherwise it returns the same `array`.
+ *
  * If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
  *
  * @example
@@ -49,7 +55,9 @@ export function setItem<T>(
 ): readonly T[];
 /**
  * Returns a new array with the value at the given `index` removed from the `array`.
+ *
  * If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
+ *
  * If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
  *
  * @example
@@ -70,7 +78,9 @@ export function setItem<T>(
 ): readonly T[];
 /**
  * Returns a new array with the value inserted at the given `index`. If the `operation` is `PREPEND`, inserts the item before the item at the specified `index`. If the `operation` is `APPEND`, inserts the item after the item at the specified `index`.
+ *
  * If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
+ *
  * If the `array` is `undefined`, it is considered as an `EMPTY_ARRAY`.
  *
  * @example

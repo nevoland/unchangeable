@@ -5,7 +5,9 @@ import { setItem } from "./setItem.js";
 import { setProperty } from "./setProperty.js";
 
 /**
- * Sets the `item` value of a composite `value` at a given `path`. If the `item` is a function, it is called with the actual `item` value as argument and the return value is used to set the item value.
+ * Sets the `item` value of a composite `value` at a given `path`.
+ *
+ * If the `item` is a function, it is called with the actual `item` value as argument and the return value is used to set the item value.
  *
  * @param value The composite value
  * @param path The path leading to the item in the composite value

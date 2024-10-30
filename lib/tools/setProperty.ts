@@ -18,8 +18,11 @@ export function setProperty<
 >(object: T | undefined, key: K, value: V): T & { readonly [key in K]: V };
 /**
  * Returns a new object with `object[key]` set to `value` if `object[key]` is strictly different from `value`. Otherwise, returns the provided `object`.
+ *
  * If `key` is `undefined`, returns the `object` untouched.
+ *
  * If `value` is `undefined`, ensures that the returned object does not contain the `key`.
+ *
  * If `object` is `undefined`, it is considered as an `EMPTY_OBJECT`.
  *
  * @example

@@ -4,6 +4,7 @@ const { isArray } = Array;
 
 /**
  * Checks whether the provided value is empty or not.
+ *
  * A value is empty if it does not own any property (in case of an object) or item (in case of an array), or if it is `null` or `undefined`.
  *
  * @param value The value to check.
