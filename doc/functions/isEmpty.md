@@ -9,6 +9,7 @@
 > **isEmpty**(`value`?): `boolean`
 
 Checks whether the provided value is empty or not.
+
 A value is empty if it does not own any property (in case of an object) or item (in case of an array), or if it is `null` or `undefined`.
 
 ## Parameters
@@ -25,4 +26,4 @@ The value to check.
 
 ## Defined in
 
-[tools/isEmpty.ts:12](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/tools/isEmpty.ts#L12)
+[tools/isEmpty.ts:13](https://github.com/nevoland/unchangeable/blob/39d9a85d75efc199f878876259d3e7487750c9c6/lib/tools/isEmpty.ts#L13)

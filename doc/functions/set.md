@@ -8,7 +8,9 @@
 
 > **set**\<`T`\>(`value`, `path`, `item`, `keyIndex`): `T`
 
-Sets the `item` value of a composite `value` at a given `path`. If the `item` is a function, it is called with the actual `item` value as argument and the return value is used to set the item value.
+Sets the `item` value of a composite `value` at a given `path`.
+
+If the `item` is a function, it is called with the actual `item` value as argument and the return value is used to set the item value.
 
 ## Type Parameters
 
@@ -40,4 +42,4 @@ An new composite `value` or the same `value` if no change was necessary.
 
 ## Defined in
 
-[tools/set.ts:16](https://github.com/nevoland/unchangeable/blob/cb3ef0359ae452ac2f0cc5f751df75211de2d3d2/lib/tools/set.ts#L16)
+[tools/set.ts:18](https://github.com/nevoland/unchangeable/blob/39d9a85d75efc199f878876259d3e7487750c9c6/lib/tools/set.ts#L18)
