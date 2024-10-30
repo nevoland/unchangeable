@@ -28,4 +28,4 @@ The value to check.
 
 ## Defined in
 
-[tools/undefinedIfEmpty.ts:9](https://github.com/nevoland/unchangeable/blob/39d9a85d75efc199f878876259d3e7487750c9c6/lib/tools/undefinedIfEmpty.ts#L9)
+[tools/undefinedIfEmpty.ts:9](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/undefinedIfEmpty.ts#L9)

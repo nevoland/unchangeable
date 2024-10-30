@@ -77,7 +77,9 @@ export function setItem<T>(
   operation: Remove,
 ): readonly T[];
 /**
- * Returns a new array with the value inserted at the given `index`. If the `operation` is `PREPEND`, inserts the item before the item at the specified `index`. If the `operation` is `APPEND`, inserts the item after the item at the specified `index`.
+ * Returns a new array with the value inserted at the given `index`.
+ *
+ * If the `operation` is `PREPEND`, inserts the item before the item at the specified `index`. If the `operation` is `APPEND`, inserts the item after the item at the specified `index`.
  *
  * If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
  *

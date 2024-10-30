@@ -55,7 +55,7 @@ const result = setItem(["a", "b"], 1, "c")
 
 ### Defined in
 
-[tools/setItem.ts:28](https://github.com/nevoland/unchangeable/blob/39d9a85d75efc199f878876259d3e7487750c9c6/lib/tools/setItem.ts#L28)
+[tools/setItem.ts:28](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/setItem.ts#L28)
 
 ## setItem(array, operation, value)
 
@@ -100,7 +100,7 @@ const result2 = setItem(["a", "b", "c"], REMOVE, "b")
 
 ### Defined in
 
-[tools/setItem.ts:51](https://github.com/nevoland/unchangeable/blob/39d9a85d75efc199f878876259d3e7487750c9c6/lib/tools/setItem.ts#L51)
+[tools/setItem.ts:51](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/setItem.ts#L51)
 
 ## setItem(array, index, operation)
 
@@ -145,13 +145,15 @@ const result = setItem(["a", "b"], 1, REMOVE)
 
 ### Defined in
 
-[tools/setItem.ts:74](https://github.com/nevoland/unchangeable/blob/39d9a85d75efc199f878876259d3e7487750c9c6/lib/tools/setItem.ts#L74)
+[tools/setItem.ts:74](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/setItem.ts#L74)
 
 ## setItem(array, index, operation, value)
 
 > **setItem**\<`T`\>(`array`, `index`, `operation`, `value`): readonly `T`[]
 
-Returns a new array with the value inserted at the given `index`. If the `operation` is `PREPEND`, inserts the item before the item at the specified `index`. If the `operation` is `APPEND`, inserts the item after the item at the specified `index`.
+Returns a new array with the value inserted at the given `index`.
+
+If the `operation` is `PREPEND`, inserts the item before the item at the specified `index`. If the `operation` is `APPEND`, inserts the item after the item at the specified `index`.
 
 If `index` is `undefined`, a negative number, or greater than `array.length`, returns the `array` untouched.
 
@@ -192,4 +194,4 @@ const result = setItem(["a", "b"], 1, APPEND, "c")
 
 ### Defined in
 
-[tools/setItem.ts:97](https://github.com/nevoland/unchangeable/blob/39d9a85d75efc199f878876259d3e7487750c9c6/lib/tools/setItem.ts#L97)
+[tools/setItem.ts:99](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/setItem.ts#L99)
