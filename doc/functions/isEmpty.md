@@ -6,24 +6,128 @@
 
 # Function: isEmpty()
 
-> **isEmpty**(`value`?): `boolean`
+## isEmpty(value)
+
+> **isEmpty**\<`T`\>(`value`?): `value is undefined`
 
 Checks whether the provided value is empty or not.
 
-A value is empty if it does not own any property (in case of an object) or item (in case of an array), or if it is `null` or `undefined`.
+An empty object is an object with no own properties, and an empty array is an array with no items.
+An empty value can be `undefined`, `null`, an empty array, or an empty object.
+Other types are considered non-empty, except for strings, which are considered empty if they have a length of 0.
 
-## Parameters
+### Type Parameters
 
-• **value?**: `any`
+• **T** *extends* `undefined`
+
+### Parameters
+
+• **value?**: `undefined`
 
 The value to check.
 
-## Returns
+### Returns
 
-`boolean`
+`value is undefined`
 
 `true` if the value is empty, `false` otherwise.
 
-## Defined in
+### Defined in
 
-[tools/isEmpty.ts:13](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/isEmpty.ts#L13)
+[tools/isEmpty.ts:15](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/isEmpty.ts#L15)
+
+## isEmpty(value)
+
+> **isEmpty**\<`T`\>(`value`): `value is null`
+
+### Type Parameters
+
+• **T** *extends* `null`
+
+### Parameters
+
+• **value**: `null`
+
+### Returns
+
+`value is null`
+
+### Defined in
+
+[tools/isEmpty.ts:18](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/isEmpty.ts#L18)
+
+## isEmpty(value)
+
+> **isEmpty**\<`T`\>(`value`): `value is T & ""`
+
+### Type Parameters
+
+• **T** *extends* `string`
+
+### Parameters
+
+• **value**: `T`
+
+### Returns
+
+`value is T & ""`
+
+### Defined in
+
+[tools/isEmpty.ts:19](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/isEmpty.ts#L19)
+
+## isEmpty(value)
+
+> **isEmpty**\<`T`\>(`value`?): `value is T & readonly never[]`
+
+### Type Parameters
+
+• **T** *extends* readonly `any`[]
+
+### Parameters
+
+• **value?**: `T`
+
+### Returns
+
+`value is T & readonly never[]`
+
+### Defined in
+
+[tools/isEmpty.ts:20](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/isEmpty.ts#L20)
+
+## isEmpty(value)
+
+> **isEmpty**\<`T`\>(`value`): `value is Record<PropertyKey, never>`
+
+### Type Parameters
+
+• **T** *extends* `object`
+
+### Parameters
+
+• **value**: `T`
+
+### Returns
+
+`value is Record<PropertyKey, never>`
+
+### Defined in
+
+[tools/isEmpty.ts:23](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/isEmpty.ts#L23)
+
+## isEmpty(value)
+
+> **isEmpty**(`value`): `value is never`
+
+### Parameters
+
+• **value**: `any`
+
+### Returns
+
+`value is never`
+
+### Defined in
+
+[tools/isEmpty.ts:26](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/isEmpty.ts#L26)

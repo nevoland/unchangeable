@@ -10,7 +10,7 @@ Returns a new object with `object[key]` set to `value` if `object[key]` is stric
 
 If `key` is `undefined`, returns the `object` untouched.
 
-If `value` is `undefined`, ensures that the returned object does not contain the `key`.
+If `value` is `undefined` or `REMOVE`, ensures that the returned object does not contain the `key`.
 
 If `object` is `undefined`, it is considered as an `EMPTY_OBJECT`.
 
@@ -41,7 +41,7 @@ Returns a new object with `object[key]` set to `value` if `object[key]` is stric
 
 If `key` is `undefined`, returns the `object` untouched.
 
-If `value` is `undefined`, ensures that the returned object does not contain the `key`.
+If `value` is `undefined` or `REMOVE`, ensures that the returned object does not contain the `key`.
 
 If `object` is `undefined`, it is considered as an `EMPTY_OBJECT`.
 
@@ -84,7 +84,7 @@ The value to set the object key to.
 
 ### Defined in
 
-[tools/setProperty.ts:6](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/setProperty.ts#L6)
+[tools/setProperty.ts:6](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/setProperty.ts#L6)
 
 ## setProperty(object, key, value)
 
@@ -94,7 +94,7 @@ Returns a new object with `object[key]` set to `value` if `object[key]` is stric
 
 If `key` is `undefined`, returns the `object` untouched.
 
-If `value` is `undefined`, ensures that the returned object does not contain the `key`.
+If `value` is `undefined` or `REMOVE`, ensures that the returned object does not contain the `key`.
 
 If `object` is `undefined`, it is considered as an `EMPTY_OBJECT`.
 
@@ -137,7 +137,7 @@ The value to set the object key to.
 
 ### Defined in
 
-[tools/setProperty.ts:10](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/setProperty.ts#L10)
+[tools/setProperty.ts:10](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/setProperty.ts#L10)
 
 ## setProperty(object, key, value)
 
@@ -147,7 +147,7 @@ Returns a new object with `object[key]` set to `value` if `object[key]` is stric
 
 If `key` is `undefined`, returns the `object` untouched.
 
-If `value` is `undefined`, ensures that the returned object does not contain the `key`.
+If `value` is `undefined` or `REMOVE`, ensures that the returned object does not contain the `key`.
 
 If `object` is `undefined`, it is considered as an `EMPTY_OBJECT`.
 
@@ -192,4 +192,4 @@ The value to set the object key to.
 
 ### Defined in
 
-[tools/setProperty.ts:14](https://github.com/nevoland/unchangeable/blob/73093ebfd96aa50f8db4971b57185ca41ac38a51/lib/tools/setProperty.ts#L14)
+[tools/setProperty.ts:14](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/tools/setProperty.ts#L14)
