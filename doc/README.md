@@ -36,6 +36,7 @@
 - [negate](functions/negate.md)
 - [set](functions/set.md)
 - [setItem](functions/setItem.md)
+- [setMap](functions/setMap.md)
 - [setProperty](functions/setProperty.md)
 - [setPropertyMap](functions/setPropertyMap.md)
 - [undefinedIfEmpty](functions/undefinedIfEmpty.md)

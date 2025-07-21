@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[types/Prepend.ts:3](https://github.com/nevoland/unchangeable/blob/ad66755f095504a94d40a3a96d1734780b3bf9ee/lib/types/Prepend.ts#L3)
+[types/Prepend.ts:3](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/types/Prepend.ts#L3)
