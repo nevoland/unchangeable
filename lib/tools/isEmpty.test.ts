@@ -21,3 +21,22 @@ test("returns false for non-empty arrays", () => {
   expect(isEmpty([undefined])).toBeFalsy();
   expect(isEmpty([1])).toBeFalsy();
 });
+
+test("returns true for empty strings and false for non-empty strings", () => {
+  expect(isEmpty("")).toBeTruthy();
+  expect(isEmpty("test")).toBeFalsy();
+});
+
+test("returns false for numbers", () => {
+  expect(isEmpty(0)).toBeFalsy();
+  expect(isEmpty(1)).toBeFalsy();
+});
+
+test("returns false for booleans", () => {
+  expect(isEmpty(true)).toBeFalsy();
+  expect(isEmpty(false)).toBeFalsy();
+});
+
+test("returns false for functions", () => {
+  expect(isEmpty(() => {})).toBeFalsy();
+});

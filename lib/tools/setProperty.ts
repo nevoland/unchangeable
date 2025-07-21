@@ -21,7 +21,7 @@ export function setProperty<
  *
  * If `key` is `undefined`, returns the `object` untouched.
  *
- * If `value` is `undefined`, ensures that the returned object does not contain the `key`.
+ * If `value` is `undefined` or `REMOVE`, ensures that the returned object does not contain the `key`.
  *
  * If `object` is `undefined`, it is considered as an `EMPTY_OBJECT`.
  *
@@ -50,7 +50,9 @@ export function setProperty<
   if (value === undefined || value === REMOVE) {
     if (key in object) {
       const { [key]: _, ...result } = object;
-      return isEmpty(result) ? EMPTY_OBJECT : result;
+      return isEmpty(result)
+        ? (EMPTY_OBJECT as Readonly<T>)
+        : (result as Readonly<T>);
     }
     return object;
   }
