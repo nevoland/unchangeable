@@ -5,6 +5,7 @@ export { memoize } from "./tools/memoize.js";
 export { negate } from "./tools/negate.js";
 export { set } from "./tools/set.js";
 export { setItem } from "./tools/setItem.js";
+export { setMap } from "./tools/setMap.js";
 export { setProperty } from "./tools/setProperty.js";
 export { setPropertyMap } from "./tools/setPropertyMap.js";
 export { undefinedIfEmpty } from "./tools/undefinedIfEmpty.js";
