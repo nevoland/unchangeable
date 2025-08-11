@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[constants/REMOVE.ts:1](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/constants/REMOVE.ts#L1)
+[constants/REMOVE.ts:1](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/constants/REMOVE.ts#L1)

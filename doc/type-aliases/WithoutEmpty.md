@@ -14,4 +14,4 @@
 
 ## Defined in
 
-[types/WithoutEmpty.ts:3](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/types/WithoutEmpty.ts#L3)
+[types/WithoutEmpty.ts:3](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/types/WithoutEmpty.ts#L3)

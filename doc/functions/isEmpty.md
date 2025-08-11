@@ -34,7 +34,7 @@ The value to check.
 
 ### Defined in
 
-[tools/isEmpty.ts:15](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/tools/isEmpty.ts#L15)
+[tools/isEmpty.ts:15](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/isEmpty.ts#L15)
 
 ## isEmpty(value)
 
@@ -54,7 +54,7 @@ The value to check.
 
 ### Defined in
 
-[tools/isEmpty.ts:18](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/tools/isEmpty.ts#L18)
+[tools/isEmpty.ts:18](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/isEmpty.ts#L18)
 
 ## isEmpty(value)
 
@@ -74,7 +74,7 @@ The value to check.
 
 ### Defined in
 
-[tools/isEmpty.ts:19](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/tools/isEmpty.ts#L19)
+[tools/isEmpty.ts:19](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/isEmpty.ts#L19)
 
 ## isEmpty(value)
 
@@ -94,7 +94,7 @@ The value to check.
 
 ### Defined in
 
-[tools/isEmpty.ts:20](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/tools/isEmpty.ts#L20)
+[tools/isEmpty.ts:20](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/isEmpty.ts#L20)
 
 ## isEmpty(value)
 
@@ -114,7 +114,7 @@ The value to check.
 
 ### Defined in
 
-[tools/isEmpty.ts:23](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/tools/isEmpty.ts#L23)
+[tools/isEmpty.ts:23](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/isEmpty.ts#L23)
 
 ## isEmpty(value)
 
@@ -130,4 +130,4 @@ The value to check.
 
 ### Defined in
 
-[tools/isEmpty.ts:26](https://github.com/nevoland/unchangeable/blob/2346b066c6a3bcab5cd6c3ea00a37b523802ea73/lib/tools/isEmpty.ts#L26)
+[tools/isEmpty.ts:26](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/isEmpty.ts#L26)
