@@ -34,6 +34,7 @@
 - [isEmpty](functions/isEmpty.md)
 - [memoize](functions/memoize.md)
 - [negate](functions/negate.md)
+- [same](functions/same.md)
 - [set](functions/set.md)
 - [setItem](functions/setItem.md)
 - [setMap](functions/setMap.md)

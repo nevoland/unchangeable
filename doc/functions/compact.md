@@ -42,7 +42,7 @@ The value to process.
 
 ### Defined in
 
-[tools/compact.ts:9](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/compact.ts#L9)
+[tools/compact.ts:9](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/compact.ts#L9)
 
 ## compact(value)
 
@@ -69,7 +69,7 @@ The value to process.
 
 ### Defined in
 
-[tools/compact.ts:10](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/compact.ts#L10)
+[tools/compact.ts:10](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/compact.ts#L10)
 
 ## compact(value)
 
@@ -100,7 +100,7 @@ The value to process.
 
 ### Defined in
 
-[tools/compact.ts:11](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/compact.ts#L11)
+[tools/compact.ts:11](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/compact.ts#L11)
 
 ## compact(value)
 
@@ -131,4 +131,4 @@ The value to process.
 
 ### Defined in
 
-[tools/compact.ts:12](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/compact.ts#L12)
+[tools/compact.ts:12](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/compact.ts#L12)

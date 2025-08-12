@@ -84,7 +84,7 @@ The value to set the object key to.
 
 ### Defined in
 
-[tools/setProperty.ts:6](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/setProperty.ts#L6)
+[tools/setProperty.ts:6](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/setProperty.ts#L6)
 
 ## setProperty(object, key, value)
 
@@ -137,7 +137,7 @@ The value to set the object key to.
 
 ### Defined in
 
-[tools/setProperty.ts:10](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/setProperty.ts#L10)
+[tools/setProperty.ts:10](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/setProperty.ts#L10)
 
 ## setProperty(object, key, value)
 
@@ -192,4 +192,4 @@ The value to set the object key to.
 
 ### Defined in
 
-[tools/setProperty.ts:14](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/tools/setProperty.ts#L14)
+[tools/setProperty.ts:14](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/setProperty.ts#L14)

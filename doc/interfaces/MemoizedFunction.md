@@ -12,7 +12,7 @@
 
 • **K**
 
-> **MemoizedFunction**(...`args`): `void`
+> **MemoizedFunction**(...`args`): `ReturnType`\<`F`\>
 
 ## Parameters
 
@@ -20,11 +20,11 @@
 
 ## Returns
 
-`void`
+`ReturnType`\<`F`\>
 
 ## Defined in
 
-[types/MemoizedFunction.ts:4](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/types/MemoizedFunction.ts#L4)
+[types/MemoizedFunction.ts:4](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/types/MemoizedFunction.ts#L4)
 
 ## Properties
 
@@ -32,8 +32,8 @@
 
 > **cache**: [`MemoizeCache`](../type-aliases/MemoizeCache.md)\<`K`, `ReturnType`\<`F`\>\>
 
-Cache.
+The cache used to store the results of the memoized function.
 
 #### Defined in
 
-[types/MemoizedFunction.ts:8](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/types/MemoizedFunction.ts#L8)
+[types/MemoizedFunction.ts:8](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/types/MemoizedFunction.ts#L8)

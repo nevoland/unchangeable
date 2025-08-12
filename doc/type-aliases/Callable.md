@@ -24,4 +24,4 @@
 
 ## Defined in
 
-[types/Callable.ts:1](https://github.com/nevoland/unchangeable/blob/90aff8eb074821c44b2befe353f53ae1546bb16f/lib/types/Callable.ts#L1)
+[types/Callable.ts:1](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/types/Callable.ts#L1)
