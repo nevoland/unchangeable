@@ -3,6 +3,7 @@ export { compact } from "./tools/compact.js";
 export { isEmpty } from "./tools/isEmpty.js";
 export { memoize } from "./tools/memoize.js";
 export { negate } from "./tools/negate.js";
+export { same } from "./tools/same.js";
 export { set } from "./tools/set.js";
 export { setItem } from "./tools/setItem.js";
 export { setMap } from "./tools/setMap.js";
