@@ -36,4 +36,4 @@ A new function that returns the negated result of the original function.
 
 ## Defined in
 
-[tools/negate.ts:7](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/negate.ts#L7)
+[tools/negate.ts:7](https://github.com/nevoland/unchangeable/blob/f687b92ffc4646f1a0c26dfa3d6e3747a4648c81/lib/tools/negate.ts#L7)

@@ -16,4 +16,4 @@
 
 ## Defined in
 
-[types/MemoizeCache.ts:1](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/types/MemoizeCache.ts#L1)
+[types/MemoizeCache.ts:1](https://github.com/nevoland/unchangeable/blob/f687b92ffc4646f1a0c26dfa3d6e3747a4648c81/lib/types/MemoizeCache.ts#L1)

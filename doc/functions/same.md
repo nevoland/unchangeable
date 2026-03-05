@@ -28,4 +28,4 @@ Whether the two values are the same.
 
 ## Defined in
 
-[tools/same.ts:10](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/same.ts#L10)
+[tools/same.ts:10](https://github.com/nevoland/unchangeable/blob/f687b92ffc4646f1a0c26dfa3d6e3747a4648c81/lib/tools/same.ts#L10)

@@ -31,6 +31,7 @@
 ## Functions
 
 - [compact](functions/compact.md)
+- [isDefined](functions/isDefined.md)
 - [isEmpty](functions/isEmpty.md)
 - [memoize](functions/memoize.md)
 - [negate](functions/negate.md)

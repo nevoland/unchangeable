@@ -36,4 +36,4 @@ A new object with properties set from the map, or the original target if the map
 
 ## Defined in
 
-[tools/setPropertyMap.ts:15](https://github.com/nevoland/unchangeable/blob/dd3492fb78b3ab9733f94ad51551bd591389c2c3/lib/tools/setPropertyMap.ts#L15)
+[tools/setPropertyMap.ts:15](https://github.com/nevoland/unchangeable/blob/f687b92ffc4646f1a0c26dfa3d6e3747a4648c81/lib/tools/setPropertyMap.ts#L15)
