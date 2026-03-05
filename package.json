@@ -1,6 +1,6 @@
 {
   "name": "unchangeable",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Tools for immutable values.",
   "keywords": [
     "immutable",
